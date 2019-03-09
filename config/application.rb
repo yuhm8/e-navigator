@@ -1,5 +1,7 @@
 require_relative 'boot'
-
+I18n.available_locales = %i(ja en)
+I18n.enforce_available_locales = true
+I18n.default_locale = :ja
 require "rails"
 # Pick the frameworks you want:
 require "active_model/railtie"
